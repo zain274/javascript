@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <input type="text" placeholder="Enter even" id="inpuid" class="form-control">
+                    <p id="resultid"></p>
+                    <buttton class="form-control btn btn-danger" onclick="myfunction()">
+                        submit
+                    </buttton>
+                </div>
+            </div>
+        </div>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+
+
+        <script>
+            function myfunction(){
+                var input= document.getElementById('inpuid').value;
+                if(input%2==0){
+                    document.getElementById('resultid').innerHTML = "Even";
+                    document.getElementById('resultid').style.color = "green";
+                }
+                else{
+                    document.getElementById('resultid').innerHTML = "odd";
+                    document.getElementById('resultid').style.color = "blue";
+                }
+            }
+        </script>
+    </body>
+</html>
